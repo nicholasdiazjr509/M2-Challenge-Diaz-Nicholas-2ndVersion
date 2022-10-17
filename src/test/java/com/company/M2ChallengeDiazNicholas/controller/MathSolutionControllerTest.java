@@ -107,7 +107,6 @@ public class MathSolutionControllerTest {
                 .andDo(print())
                 .andExpect(status().isCreated()) //Assert
                 .andExpect(content().json(outputJson));
-
     }
 
     @Test
