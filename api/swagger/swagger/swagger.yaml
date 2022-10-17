@@ -1,0 +1,13 @@
+swagger: "0.7.5"
+info:
+  version: "1.0.0"
+  title: M2-Challenge-Diaz-Nicholas
+  host: localhost:8080
+  basePath: /
+  schemes:
+    - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
