@@ -52,7 +52,6 @@ public class MonthController {
             }
             return foundMonth;
         }
-
     @RequestMapping(value = "/randomMonth", method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public Month getRandomMonth() {
@@ -68,7 +67,5 @@ public class MonthController {
         }
         return randomMonth;
     }
-
-
 }
 
