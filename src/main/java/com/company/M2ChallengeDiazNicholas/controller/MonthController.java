@@ -50,7 +50,6 @@ public class MonthController {
                     break;
                 }
             }
-
             return foundMonth;
         }
 

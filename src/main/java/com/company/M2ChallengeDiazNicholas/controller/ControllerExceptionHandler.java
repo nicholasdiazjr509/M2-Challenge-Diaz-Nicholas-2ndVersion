@@ -36,7 +36,6 @@ public class ControllerExceptionHandler {
             errorResponse.setStatus(HttpStatus.UNPROCESSABLE_ENTITY.value());
             errorResponseList.add(errorResponse);
         }
-
         // Create and return the ResponseEntity
         return new ResponseEntity<>(errorResponseList, HttpStatus.UNPROCESSABLE_ENTITY);
     }
@@ -50,8 +49,6 @@ public class ControllerExceptionHandler {
         error.setTimestamp(LocalDateTime.now());
         return new ResponseEntity<>(error, HttpStatus.UNPROCESSABLE_ENTITY);
     }
-
-
 
     @ExceptionHandler(value = NotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)

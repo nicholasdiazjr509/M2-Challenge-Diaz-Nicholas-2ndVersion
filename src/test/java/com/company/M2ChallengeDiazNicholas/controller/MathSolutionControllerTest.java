@@ -113,7 +113,6 @@ public class MathSolutionControllerTest {
     public void ShouldReturn422StatusCodeIfOperandIsNotThereForMultiplyRoute() throws Exception {
         //Arrange
         MathSolution inputObject = new MathSolution();
-
         String inputJson = mapper.writeValueAsString(inputObject);
 
         //Act
