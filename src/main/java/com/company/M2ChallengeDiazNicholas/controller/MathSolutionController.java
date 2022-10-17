@@ -5,13 +5,13 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+
 import javax.validation.Valid;
 //used some code from http://stackoverflow.com/questions/calculator
 //https://github.com/topics/simple-calculator
 
 @RestController
 public class MathSolutionController {
-
 // add
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
@@ -25,7 +25,6 @@ public class MathSolutionController {
             mathSolution.setAnswer(answer);
         return mathSolution;
     }
-
 //  subtract
     @RequestMapping(value = "/subtract", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
@@ -39,7 +38,6 @@ public class MathSolutionController {
         mathSolution.setAnswer(answer);
         return mathSolution;
     }
-
 //    multiply
     @RequestMapping(value = "/multiply", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
@@ -53,8 +51,7 @@ public class MathSolutionController {
         mathSolution.setAnswer(answer);
         return mathSolution;
     }
-
-//    divide
+ //    divide
     @RequestMapping(value = "/divide", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public MathSolution divideTwoNumbers(@RequestBody @Valid @NotNull MathSolution mathSolution) {
@@ -68,6 +65,7 @@ public class MathSolutionController {
         return mathSolution;
     }
 }
+
 
 
 

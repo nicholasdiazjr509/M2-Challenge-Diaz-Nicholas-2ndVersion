@@ -36,6 +36,7 @@ public class ControllerExceptionHandler {
             errorResponse.setStatus(HttpStatus.UNPROCESSABLE_ENTITY.value());
             errorResponseList.add(errorResponse);
         }
+
         // Create and return the ResponseEntity
         return new ResponseEntity<>(errorResponseList, HttpStatus.UNPROCESSABLE_ENTITY);
     }

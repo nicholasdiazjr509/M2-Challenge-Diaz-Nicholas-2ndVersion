@@ -40,6 +40,7 @@ public class MonthController {
     @RequestMapping(value = "/month/{monthNumber}", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public Month getMonthByNumber(@PathVariable Integer monthNumber) {
+
          if (monthNumber < 1 || monthNumber > 12 ) {
             throw new IllegalArgumentException("Input out of range - Number must be between 1 and 12");
         }
